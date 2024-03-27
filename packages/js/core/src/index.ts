@@ -164,12 +164,103 @@ export type {
     CreateHighlighterOptions,
 } from './core/aiChat/highlighter/highlighter';
 
-// OTHER ____________________
+// CONVERSATION _____________
 
 export type {
     ConversationItem,
 } from './types/conversation';
 
 export type {
+    ConversationPart,
+    ConversationPartHandler,
+    ConversationPartStatus,
+    ConversationPartAiMessage,
+    ConversationPartUserMessage,
+    ConversationPartItem,
+    ConversationPartItemType,
+    ConversationPartEvent,
+    ConversationPartUpdateCallback,
+    ConversationPartChunkCallback,
+    ConversationPartCompleteCallback,
+    ConversationPartErrorCallback,
+} from './types/conversationPart';
+
+export type {
     ParticipantRole,
 } from './types/participant';
+
+// DOM COMPONENTS ___________
+
+export type {
+    ChatPictureProps,
+} from './comp/ChatPicture/props';
+
+export {
+    className as compChatPictureClassName,
+} from './comp/ChatPicture/create';
+
+export type {
+    ConversationItemProps,
+} from './comp/ConversationItem/props';
+
+export {
+    className as compConversationItemClassName,
+} from './comp/ConversationItem/create';
+
+export type {
+    ExceptionsBoxProps,
+} from './comp/ExceptionsBox/props';
+
+export {
+    className as compExceptionsBoxClassName,
+} from './comp/ExceptionsBox/create';
+
+export {
+    className as compLoaderClassName,
+} from './comp/Loader/create';
+
+export type {
+    MessageStatus,
+    MessageDirection,
+    MessageProps,
+} from './comp/Message/props';
+
+export {
+    className as compMessageClassName,
+} from './comp/Message/create';
+
+export type {
+    PromptBoxStatus,
+    PromptBoxProps,
+} from './comp/PromptBox/props';
+
+export {
+    className as compPromptBoxClassName,
+} from './comp/PromptBox/create';
+
+export {
+    className as compSendIconClassName,
+} from './comp/SendIcon/create';
+
+export type {
+    WelcomeMessageProps,
+} from './comp/WelcomeMessage/props';
+
+export {
+    className as compWelcomeMessageClassName,
+    personaNameClassName as compWelcomeMessagePersonaNameClassName,
+} from './comp/WelcomeMessage/create';
+
+export {
+    welcomeMessageTextClassName as compWelcomeMessageTextClassName,
+} from './comp/WelcomeMessage/utils/updateWelcomeMessageText';
+
+// SERVICES _________________
+
+export type {
+    SubmitPrompt,
+} from './core/aiChat/services/submitPrompt/submitPrompt';
+
+export {
+    submitPrompt,
+} from './core/aiChat/services/submitPrompt/impl';
